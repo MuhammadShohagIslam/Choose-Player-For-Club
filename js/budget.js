@@ -8,8 +8,14 @@ document
             "perPlayerInput",
             "Per Player"
         );
-        const totalPlayerBudget = getPerPlayerInputValue * totalSelectedPlayer;
-        getTotal("playerExpenses", totalPlayerBudget);
+        // checking is has seleted player on the seleted card or not
+        if (totalSelectedPlayer > 0) {
+            const totalPlayerBudget =
+                getPerPlayerInputValue * totalSelectedPlayer;
+            getTotal("playerExpenses", totalPlayerBudget);
+        } else {
+            alert("Please Select Minimum 1 Player");
+        }
     });
 
 // Budget Calculation For Team
