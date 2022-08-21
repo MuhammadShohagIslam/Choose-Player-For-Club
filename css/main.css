@@ -1,0 +1,75 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope:wght@400;500;600;700&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+    background-color: #000000;
+}
+/* End Custome Style */
+
+/* Start Header Section */
+.banner-area {
+    min-height: 481px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner-info {
+}
+.banner-title {
+    position: relative;
+    width: 735px;
+    margin: 0 auto;
+}
+.banner-title h2 {
+    font-weight: 400;
+    font-size: 76px;
+    line-height: 94px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ff5e19;
+    font-family: "Berkshire Swash", cursive;
+}
+.banner-description {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin-top: 28px;
+}
+.banner-line-marker {
+    position: absolute;
+    right: -6%;
+    top: 49%;
+}
+.bottom-left-img1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.bottom-left-img2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+}
+.bottom-right-img1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.bottom-right-img2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* End Header Section */
