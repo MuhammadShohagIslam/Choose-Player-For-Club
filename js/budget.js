@@ -2,11 +2,14 @@
 document
     .getElementById("perPlayerExpenses")
     .addEventListener("click", function () {
+        const totalSelectedPlayer =
+            document.querySelectorAll("#select-player").length;
         const getPerPlayerInputValue = getInputValue(
             "perPlayerInput",
             "Per Player"
         );
-        getTotal("playerExpenses", getPerPlayerInputValue);
+        const totalPlayerBudget = getPerPlayerInputValue * totalSelectedPlayer;
+        getTotal("playerExpenses", totalPlayerBudget);
     });
 
 // Budget Calculation For Team
